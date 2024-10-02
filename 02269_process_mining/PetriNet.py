@@ -80,4 +80,9 @@ class PetriNet():
                     self.add_marking(place)
                     
     
+    def transition_name_to_id(self, name): 
+        for k, v in self.transitions.items(): 
+            if name == v: 
+                return k
 
+        
